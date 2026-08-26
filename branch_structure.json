@@ -1,0 +1,18 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "feat/frontend-perf-budgets",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "feat/frontend-perf-budgets": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "feat/frontend-perf-budgets",
+    "origin"
+  ]
+}
