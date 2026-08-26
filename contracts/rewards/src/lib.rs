@@ -1221,6 +1221,7 @@ impl RewardsContract {
         if !list.contains(&token) {
             list.push_back(token);
         }
+        env.storage().instance().set(&DataKey::SupportedTokens, &list);
         env.storage()
             .instance()
             .set(&DataKey::SupportedTokens, &list);
@@ -1254,6 +1255,7 @@ impl RewardsContract {
                 }
             }
         }
+        env.storage().instance().set(&DataKey::SupportedTokens, &list);
         env.storage()
             .instance()
             .set(&DataKey::SupportedTokens, &list);
